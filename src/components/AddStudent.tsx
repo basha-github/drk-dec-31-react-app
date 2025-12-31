@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
 import '../css/student.css'
 import axios from 'axios';
@@ -155,7 +155,10 @@ const getFee = (e:any)=>{
  
   
   <button 
-  onClick={saveData}
+  onClick={
+    (e:any)=>{
+    saveData(e);
+}}
   type="submit" className="btn btn-primary">Submit</button>
 </form>
 
